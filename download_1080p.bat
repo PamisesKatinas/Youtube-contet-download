@@ -9,6 +9,6 @@ if "%URL%"=="" (
 )
 
 
-yt-dlp.exe -f "bv*[height<=1080]+ba/b[height<=1080]" --merge-output-format mp4 -o "D:\Youtube video download\New folder\%%(uploader)s - %%(title).80s.%%(ext)s" %url%
+yt-dlp.exe -f "bv*[height<=1080]+ba/b[height<=1080]" --merge-output-format mp4 -o "%%(uploader)s - %%(title).80s.%%(ext)s" %url%
 
 pause
